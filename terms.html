@@ -1,0 +1,737 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Terms and Conditions - Repatria</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c4c7c7",
+                      "on-tertiary-fixed": "#1d1b1a",
+                      "tertiary-container": "#1d1b1a",
+                      "surface-tint": "#5f5e5e",
+                      "on-secondary-container": "#626262",
+                      "surface-container-low": "#f7f3f2",
+                      "on-surface": "#1c1b1b",
+                      "on-secondary-fixed-variant": "#464747",
+                      "primary": "#000000",
+                      "surface-container-highest": "#e5e2e1",
+                      "inverse-on-surface": "#f4f0ef",
+                      "on-tertiary-container": "#868381",
+                      "on-error-container": "#93000a",
+                      "outline": "#747878",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#c8c6c5",
+                      "surface-container-high": "#ebe7e6",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#fdf8f8",
+                      "on-tertiary-fixed-variant": "#484645",
+                      "background": "#fdf8f8",
+                      "surface-variant": "#e5e2e1",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "inverse-surface": "#313030",
+                      "secondary-container": "#e1dfdf",
+                      "primary-container": "#1c1b1b",
+                      "surface": "#fdf8f8",
+                      "on-surface-variant": "#444748",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "secondary": "#5e5e5e",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#c7c6c6",
+                      "on-primary-fixed-variant": "#474646",
+                      "surface-dim": "#ddd9d8",
+                      "tertiary": "#000000",
+                      "tertiary-fixed-dim": "#cac6c3",
+                      "surface-container": "#f1edec",
+                      "on-primary-fixed": "#1c1b1b",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-background": "#1c1b1b",
+                      "tertiary-fixed": "#e6e1df",
+                      "secondary-fixed": "#e4e2e2",
+                      "primary-fixed": "#e5e2e1",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#858383"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px",
+                      "2xl": "1.5rem",
+                      "3xl": "1.75rem"
+              },
+              "spacing": {
+                      "unit_base": "8px",
+                      "max_width": "1280px",
+                      "gutter": "32px",
+                      "columns": "12",
+                      "section_gap_max": "180px",
+                      "container_padding": "32px",
+                      "section_gap_min": "140px"
+              },
+              "fontFamily": {
+                      "h1": ["Geist"],
+                      "h2": ["Geist"],
+                      "label-caps": ["Geist"],
+                      "body-md": ["Geist"],
+                      "body-lg": ["Geist"],
+                      "h3": ["Geist"]
+              },
+              "fontSize": {
+                      "h1": ["84px", {"lineHeight": "1.05", "letterSpacing": "-0.04em", "fontWeight": "600"}],
+                      "h2": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                      "h3": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { background-color: #F7F7F5; color: #111111; }
+        .text-secondary-auralis { color: #6B6B6B; }
+        .bg-panel-auralis { background-color: #F3F2EF; }
+        .bg-card-auralis { background-color: #FCFCFB; }
+        .border-auralis { border-color: #E7E7E4; }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: flex;
+            animation: marquee 40s linear infinite;
+            min-width: 100%;
+        }
+        .group-hover\:pause-marquee:hover {
+            animation-play-state: paused;
+        }</style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden">
+<!-- TOP NAVIGATION -->
+<nav class="fixed top-0 w-full z-50 border-b border-zinc-200/60 dark:border-zinc-800/60 bg-[#F7F7F5]/80 backdrop-blur-md dark:bg-zinc-950/80 transition-all">
+<div class="max-w-[1280px] mx-auto px-8 flex justify-between items-center h-[72px]">
+<div class="flex items-center gap-12">
+<a class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 text-[20px] font-h1" href="index.html">
+                    Repatria
+                </a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-200 font-body-md" href="how-it-works.html">How It Works</a>
+<a class="text-sm font-medium tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-200 font-body-md" href="about.html">About Us</a>
+</div>
+</div>
+<div class="flex items-center">
+<a class="bg-primary text-on-primary px-4 py-2 rounded-full font-medium transition-all scale-98 active:opacity-80 text-[14px] font-body-md" href="#">
+                    Post a Task
+                </a>
+</div>
+</div>
+</nav>
+<!-- MAIN CONTENT CANVAS -->
+<main class="flex-grow pt-[140px] pb-12">
+<!-- HERO SECTION -->
+<section class="max-w-[1280px] mx-auto px-8 mb-16">
+<div class="flex items-center gap-4 mb-8">
+<span class="font-label-caps text-label-caps bg-surface-variant text-primary px-3 py-1 rounded-full">Legal</span>
+<div class="h-px bg-auralis flex-grow opacity-50"></div>
+</div>
+<h1 class="font-h1 text-[48px] md:text-h2 text-primary leading-tight mb-6">Terms and Conditions</h1>
+<p class="font-body-lg text-body-lg text-secondary-auralis">Last updated: 10 October 2026</p>
+</section>
+<!-- TERMS CONTENT -->
+<section class="max-w-[1280px] mx-auto px-8 mb-[140px]">
+<article class="max-w-4xl">
+<h2 id="s1" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">1. About these Terms</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">These Terms and Conditions ("Terms") govern your use of Repatria mobile apps, website and services (the "Platform"), operated by Repatria Private Limited, 12/136/A1, Aralam, Thalassery, Kannur - 670704, Kerala, India ("Nock", "we", "us"). By creating an account, posting a task or accepting a task, you agree to these Terms, our <a class="text-primary underline underline-offset-4" href="privacy.html">Privacy Policy</a> and our community guidelines. If you do not agree, do not use the Platform.</p>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Part of these Terms applies to everyone, part only to Clients and part only to Runners. Where a rule is specific to a task category, it applies in addition to the general rules for that role.</p>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6"><span class="text-primary font-medium">Definitions</span></p>
+<ul class="list-disc pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li><span class="text-primary font-medium">Client:</span> a user who posts or books a task on the Platform.</li>
+<li><span class="text-primary font-medium">Runner:</span> a verified user who accepts and performs tasks on the Platform.</li>
+<li><span class="text-primary font-medium">Task:</span> a job booked through the Platform, including its description, location, time window, scope and price.</li>
+<li><span class="text-primary font-medium">Task category:</span> one of Pickup &amp; Drop, Priority Pickup &amp; Drop, Pet Sitting, Pet Walking, Vet Visit Assistance, General Paperwork, Household Help, Tuitions, Doctor Home Visit, Hospital Visitation Assistance, Overnight Bedside Support, or Custom.</li>
+<li><span class="text-primary font-medium">Ally:</span> Nock's AI assistant, which helps Clients create and clarify tasks.</li>
+<li><span class="text-primary font-medium">Scope:</span> the work described in the task as confirmed in the app. Anything outside it needs a scope extension or a new task.</li>
+<li><span class="text-primary font-medium">Resolution center:</span> the in-app feature for raising disputes about payment, damage or conduct.</li>
+</ul>
+<h2 id="s2" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">2. Nock's role, eligibility and accounts</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Nock is a technology platform that connects Clients with independent Runners. Runners are not employees or agents of Nock. Nock sets task pricing, processes payments, verifies Runners and provides tools for communication, tracking and dispute resolution.</p>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>You must be at least 18 years old to create an account. Runners must also meet the minimum age for each task category in Section 5.</li>
+<li>Clients must be verified users with a valid phone number and government ID.</li>
+<li>Runners must complete identity and address verification before accepting any task, and must meet the category qualifications in Section 5.</li>
+<li>You must give accurate information and keep it up to date. You must not create fake profiles using another person's identity or contact information.</li>
+<li>You must not create fake or duplicate accounts to exploit promotional offers or get around a suspension or ban.</li>
+<li>You are responsible for activity on your account. Report any suspected unauthorised use or data breach immediately through the app.</li>
+<li>Keep the app updated and notifications enabled during active tasks, so real-time communication works.</li>
+<li>All communication between Clients and Runners must go through Repatria app. Do not contact each other by personal phone, WhatsApp or social media.</li>
+</ol>
+<h2 id="s3" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">3. Client terms: all categories</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">These rules apply to every task a Client books.</p>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Give accurate task descriptions. Vague or misleading descriptions may lead to the task being cancelled.</li>
+<li>Treat Runners with respect and professionalism. Abusive language, threats or harassment lead to immediate account suspension.</li>
+<li>Do not discriminate against Runners based on gender, religion, caste, language or appearance.</li>
+<li>Provide a safe environment for the Runner, with no physical threats, unsafe premises or hostile individuals at the task location.</li>
+<li>Allow the Runner to leave immediately if they feel unsafe. Safety cancellations carry no penalty for the Runner.</li>
+<li>Report any Runner misconduct through the app's reporting feature, not through personal confrontation.</li>
+<li>Rate Runners fairly and honestly after each task. Giving a fraudulent low rating to avoid payment is a violation.</li>
+<li>Do not solicit Runners for off-platform work to avoid platform fees.</li>
+</ol>
+<h2 id="s4" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">4. Client terms by task category</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">When you book a task in one of these categories, the following rules apply in addition to Section 3.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.1 Pickup &amp; Drop</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide accurate pickup and drop addresses, with landmarks and a pin location.</li>
+<li>Make sure someone is available at the drop location to receive the item.</li>
+<li>Describe the item clearly: size, weight, fragility and any special handling instructions.</li>
+<li>Do not request transport of prohibited items, including alcohol, narcotics, weapons, hazardous materials or unlabelled chemicals.</li>
+<li>Do not ask the Runner to open, inspect or consume any package contents.</li>
+<li>Pack items securely before the Runner arrives. The Runner is not responsible for pre-existing damage caused by poor packaging.</li>
+<li>Provide OTP or signature confirmation on delivery when the app prompts you.</li>
+<li>Tell the Runner about any access restrictions at pickup or drop, such as a gated community, office security or floor number.</li>
+<li>Do not ask the Runner to make detours or extra stops outside the task. Book a separate task instead.</li>
+<li>Report any damage or missing items within 2 hours of delivery through the app's resolution center.</li>
+<li>Use the app, not the Runner's personal phone, for any follow-up after the task.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.2 Priority Pickup &amp; Drop</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">All Pickup &amp; Drop rules in 4.1 apply, with these additions:</p>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Acknowledge the priority surcharge before confirming the task.</li>
+<li>Make sure someone is available to receive the item. Priority tasks have a tighter delivery window.</li>
+<li>Stay reachable on the app throughout the delivery window. An unresponsive Client delays priority deliveries.</li>
+<li>Report any issues within 1 hour of delivery through the app. This replaces the 2-hour window in 4.1.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.3 Pet Sitting</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide a complete pet profile: breed, age, temperament, medical conditions, allergies and vaccination records.</li>
+<li>Provide the feeding schedule, portion sizes, medication instructions and an emergency vet contact.</li>
+<li>Disclose any aggressive behaviour, anxiety triggers or escape tendencies.</li>
+<li>Make sure the pet is in a safe, enclosed space before the Runner arrives.</li>
+<li>Provide all supplies, including food, leash, carrier, litter, medication and toys.</li>
+<li>Share house access instructions, such as keys, gate codes and alarms, through the app only.</li>
+<li>Do not expect the Runner to handle exotic, venomous or wild animals unless this is stated in the task and the Runner accepts it.</li>
+<li>Tell the Runner about any other animals or people in the house during the sitting period.</li>
+<li>Stay reachable for the whole task in case of emergencies.</li>
+<li>Do not hold the Runner liable for pre-existing health conditions or injuries not caused during the task.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.4 Pet Walking</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide a complete pet profile: breed, age, temperament, leash behaviour and triggers, such as other dogs, traffic or strangers.</li>
+<li>Provide a proper leash, harness and waste bags before the walk.</li>
+<li>Disclose any aggressive behaviour or tendency to bolt.</li>
+<li>Specify the preferred route, duration and any restricted areas.</li>
+<li>Make sure the pet wears a collar with an identification tag.</li>
+<li>Tell the Runner if the pet is in heat, recovering from surgery or has mobility limitations.</li>
+<li>Do not expect the Runner to walk more than 2 pets at once unless agreed in the task.</li>
+<li>Be available to hand over and receive the pet at the agreed times.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.5 Vet Visit Assistance</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide a complete pet profile: breed, age, medical history, vaccination records and the reason for the visit.</li>
+<li>Provide a signed authorisation letter for the vet clinic through the app.</li>
+<li>Specify the clinic's name, address and appointment time, if any.</li>
+<li>Provide a proper carrier, leash or crate for transport.</li>
+<li>Pre-approve a spending limit for consultation fees and emergency treatment through the app.</li>
+<li>Provide emergency contact details in case urgent medical decisions are needed.</li>
+<li>Treatment decisions are yours. The Runner relays the vet's recommendation and you decide.</li>
+<li>Reimburse vet fees, medication and transport costs through the app, with receipt verification.</li>
+<li>Tell the Runner about any sedation, aggression or distress during previous vet visits.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.6 General Paperwork</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide all required documents, forms and supporting papers before the Runner leaves. A submission that fails because of missing documents is not the Runner's fault.</li>
+<li>Provide a signed authorisation letter or power of attorney where the office requires one.</li>
+<li>List the steps clearly: which office, which counter, what to submit and what to collect.</li>
+<li>Do not expect the Runner to fill in, interpret or advise on any form. The Runner only carries out your instructions.</li>
+<li>Provide photocopies and originals separately, clearly labelled.</li>
+<li>Pre-approve any fees, stamp paper costs or notary charges through the app.</li>
+<li>Stay reachable during office hours in case the office asks for more documents or clarification.</li>
+<li>Share Aadhaar, PAN or bank details only through Repatria app's secure document share.</li>
+<li>Collect original documents from the Runner immediately. The Runner does not store documents.</li>
+<li>Do not hold the Runner responsible for office delays, rejections caused by incomplete documents you provided, or government system downtime.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.7 Household Help</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Give clear instructions: which rooms, which tasks, and any products to use or avoid.</li>
+<li>Provide a safe working environment, with no exposed wiring, leaking gas, unstable structures or aggressive pets in the work area.</li>
+<li>Provide cleaning supplies and equipment unless the task says the Runner brings them.</li>
+<li>Be present at the start to give access and brief the Runner, or authorise access through the app.</li>
+<li>Do not leave minors alone with the Runner.</li>
+<li>Disclose any fragile, valuable or sentimental items in the work area before the task starts.</li>
+<li>Report any damage within 4 hours of task completion, with photo evidence, through the app.</li>
+<li>Do not ask the Runner to do work outside the agreed scope, such as electrical work, plumbing or lifting more than 15 kg, without booking a separate task.</li>
+<li>Do not ask the Runner to handle personal laundry, undergarments or intimate items unless explicitly agreed in the task.</li>
+<li>Give the Runner access to a washroom and drinking water during tasks of 3 hours or more.</li>
+<li>Do not use surveillance cameras in private areas where the Runner works without telling them through the app.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.8 Tuitions</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide the student's current syllabus, textbooks and learning materials before the first session.</li>
+<li>State learning goals, weak areas and the exam schedule in the task description.</li>
+<li>Provide a quiet, well-lit and safe study environment.</li>
+<li>For sessions with minors, a parent or guardian must be on the premises at all times.</li>
+<li>Do not expect the Runner to complete homework, assignments or exam papers for the student.</li>
+<li>Give feedback on the Runner's teaching through the app.</li>
+<li>Cancel or reschedule through the app. Refunds on cancellation follow Section 9.</li>
+<li>Do not request sessions beyond the booked hours without creating a new task.</li>
+<li>Do not share the tutor's personal details with other families for off-platform arrangements.</li>
+<li>Pay for every session through the Platform. No direct cash payments to the tutor.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.9 Doctor Home Visit</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide accurate patient details: age, gender, medical history, current medications, allergies and the reason for the visit.</li>
+<li>Make sure the patient is present and accessible at the address during the appointment window.</li>
+<li>Provide a clean, private space for the examination.</li>
+<li>Disclose any infectious or communicable disease so the doctor can take precautions.</li>
+<li>Do not request prescriptions for specific medicines. The doctor prescribes based on clinical judgement.</li>
+<li>Do not ask the doctor for false medical certificates, backdated prescriptions or any fraudulent document.</li>
+<li>Follow the prescribed treatment and follow-up instructions. Nock is not liable for non-compliance.</li>
+<li>Pay the consultation fee through the Platform. No direct cash payments to the doctor.</li>
+<li>Do not share the doctor's personal phone number or try to arrange consultations off the Platform.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.10 Hospital Visitation Assistance</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide the patient's full name, hospital name, ward or room number and visiting hours.</li>
+<li>Provide a signed authorisation letter for the Runner to show at hospital reception.</li>
+<li>List what the Runner should do, such as companionship, relaying messages, collecting reports or bringing supplies.</li>
+<li>Tell the Runner about the patient's condition, mobility and any communication difficulties, such as hearing, speech or language.</li>
+<li>Do not expect the Runner to make medical decisions, sign consent forms or approve treatment for the patient.</li>
+<li>Pre-approve any purchases, such as food, toiletries or hospital pharmacy items, through the app.</li>
+<li>Stay reachable during the visit for questions or decisions hospital staff direct to the family.</li>
+<li>Do not hold the Runner responsible for hospital policies that restrict or shorten the visit.</li>
+<li>Collect the patient's belongings, reports or prescriptions from the Runner immediately after the task.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.11 Overnight Bedside Support</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Provide accurate patient details: condition, mobility, medication schedule, emergency contacts and any special needs.</li>
+<li>Make sure the patient consents to a Runner being present overnight, or a guardian consents for a minor or incapacitated patient.</li>
+<li>Provide a designated rest area or seating. The Runner is not expected to stand for the whole shift.</li>
+<li>Provide clear medication instructions, with dosages, timings and the prescribing doctor's contact number.</li>
+<li>Give the Runner access to a washroom and drinking water during the shift.</li>
+<li>Define the shift start and end times in the task. The Runner is not obliged to extend without a new booking.</li>
+<li>Arrange for someone to take over at the end of the shift. The Runner must not leave the patient alone.</li>
+<li>Tell the Runner about any fall risk, seizure history, wandering tendency or aggressive episodes.</li>
+<li>Do not expect the Runner to perform medical procedures. The Runner provides non-medical support and monitoring only.</li>
+<li>Cancel through the app. Refunds on cancellation follow Section 9.</li>
+<li>Do not use hidden cameras in the patient's room without telling the Runner through the app.</li>
+<li>Provide emergency hospital details and ambulance contacts in case of a medical emergency.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">4.12 Custom Tasks</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Give a detailed description: what needs doing, where, when, and any tools or materials needed.</li>
+<li>Do not post tasks that are illegal, unethical, dangerous or against Nock's community guidelines.</li>
+<li>Do not post tasks that need a licensed professional, such as an electrician, plumber or lawyer, unless the Runner holds the relevant licence.</li>
+<li>Do not post tasks involving intimate, romantic or inappropriate personal requests.</li>
+<li>State the estimated time needed. The Runner is not obliged to work beyond the booked duration without a scope extension.</li>
+<li>Provide all materials, tools and access the task needs, unless the task says the Runner supplies them.</li>
+<li>Answer the Runner's pre-task questions through the app before they arrive.</li>
+<li>Do not change the scope after the Runner has started without mutual agreement through the app.</li>
+<li>Record and agree on the condition of any items or spaces involved before the task starts. This protects both parties in a dispute.</li>
+<li>Do not ask the Runner to handle firearms, explosives, hazardous chemicals or any restricted material.</li>
+<li>Rate and review the task honestly. This helps Nock improve matching and safety for custom tasks.</li>
+</ol>
+<h2 id="s5" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">5. Runner eligibility and qualifications</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Every Runner must be verified, complete identity and address verification, and keep a rating of 4.0 or above to stay active. A Runner may accept tasks only in categories where they meet the requirements below. Nock verifies these during onboarding and may re-check them at any time.</p>
+<div class="overflow-x-auto mb-6 bg-card-auralis border border-auralis rounded-2xl"><table class="w-full text-sm md:text-base min-w-[560px]"><thead><tr><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Task category</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Minimum age</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Qualifications and checks</th></tr></thead><tbody>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Pickup &amp; Drop</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">20</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Valid driving licence; insured vehicle</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Priority Pickup &amp; Drop</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">20</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Valid driving licence; insured vehicle</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Pet Sitting</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">18</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Prior experience handling domestic animals (dogs, cats), verified through the onboarding questionnaire</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Pet Walking</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">18</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Prior experience handling domestic animals, verified through the onboarding questionnaire</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Vet Visit Assistance</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">18</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Prior experience handling domestic animals, verified through the onboarding questionnaire</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">General Paperwork</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">21</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Able to read and write Malayalam and English, to handle Kerala government forms</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Household Help</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">18</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Signed undertaking of experience in the category; clean background check (criminal record and address verification)</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Tuitions</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">18</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Undertaking of experience; valid degree or diploma in the subject, verified by document upload; pass Nock's subject competency assessment; clean background check (mandatory for tasks involving minors)</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Doctor Home Visit</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">22</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Active registration with the Travancore-Cochin Medical Council / Kerala State Medical Council or equivalent body, verified during onboarding</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Hospital Visitation Assistance</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">22</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">BSW, MSW or paramedical graduate; basic first-aid awareness</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Overnight Bedside Support</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">22</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">BSW, MSW or paramedical graduate; basic first-aid awareness</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Custom</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">22</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Graduate</td></tr>
+</tbody></table></div>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">A Runner must not accept a custom task outside their skill set, physical capability or comfort level. Declining a task carries no rating penalty.</p>
+<h2 id="s6" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">6. Runner terms: all categories</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">These rules apply to every task a Runner accepts. Privacy rules for Runners are in Section 10 and payment rules in Section 8.</p>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Keep real-time location tracking on during active tasks.</li>
+<li>Carry a valid government-issued ID during every task.</li>
+<li>Arrive in clean, presentable attire or with a Nock-identifiable badge.</li>
+<li>Treat the Client and their family with respect and professionalism at all times.</li>
+<li>Do not be under the influence of alcohol or drugs during any task.</li>
+<li>Report any issue or delay immediately through the app.</li>
+<li>Do not visit the Client's location outside an active task.</li>
+</ol>
+<h2 id="s7" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">7. Runner terms by task category</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">When you accept a task in one of these categories, the following rules apply in addition to Sections 5 and 6.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.1 Pickup &amp; Drop</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Do not open, inspect or tamper with any package or parcel.</li>
+<li>Do not consume any food, drink or product from a delivery.</li>
+<li>Do not transport prohibited items, including alcohol, narcotics, weapons, hazardous materials or unlabelled chemicals.</li>
+<li>Deliver within the agreed time window. Deliver perishable items within the window the Client specifies.</li>
+<li>Follow the route the app suggests unless road conditions require a change.</li>
+<li>Do not redirect, reroute or make personal stops during an active delivery.</li>
+<li>Do not sub-contract or hand the delivery to another person mid-task.</li>
+<li>Transport fragile items with proper cushioning and keep them upright.</li>
+<li>Use the tamper-evident bags Nock provides for food and medicine deliveries.</li>
+<li>Verify the recipient's identity before handing over items.</li>
+<li>Obtain the Client's signature or OTP confirmation on delivery.</li>
+<li>If delivery fails and the Client is unreachable after 15 minutes, return the item to the pickup point.</li>
+<li>Report any damage, spillage or loss immediately through the app, with photo evidence.</li>
+<li>Share an itemised receipt with the Client through the app.</li>
+<li>Do not use the Client's payment details for any unauthorised purchase. Return all change and unused funds immediately.</li>
+<li>Do not charge the Client for fuel, tolls or parking unless pre-approved through the app.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.2 Priority Pickup &amp; Drop</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">All Pickup &amp; Drop rules in 7.1 apply, with these additions:</p>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Respond to a priority assignment within 2 minutes, or it is reassigned.</li>
+<li>Start transit within 10 minutes of accepting.</li>
+<li>Take the fastest available route, with no detours or stops.</li>
+<li>Do not accept other tasks while on a priority delivery.</li>
+<li>Keep in continuous contact with the Client during transit if they ask.</li>
+<li>Deliver within the priority window. Repeated misses lead to removal from the priority tier.</li>
+<li>Report any cause of delay, such as traffic, a road closure or a vehicle breakdown, immediately through the app.</li>
+<li>Carry a backup power bank so your phone and tracking stay on.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.3 Pet Sitting</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Follow feeding and medication instructions exactly as given.</li>
+<li>Follow the Client's handling instructions, such as muzzle requirements, feeding restrictions and anxiety triggers.</li>
+<li>Never leave the animal unattended.</li>
+<li>Do not give any medication, injection or treatment unless the Client explicitly instructs it with a vet prescription.</li>
+<li>Send photo or video updates through the app at least every 2 hours.</li>
+<li>Secure all doors, windows and gates to prevent escape.</li>
+<li>Clean up after the pet, including the feeding area, waste and any mess.</li>
+<li>Report any sign of illness, injury or distress to the Client immediately, and seek vet advice if instructed.</li>
+<li>Do not let unauthorised people into the premises, invite anyone, or bring your own pets.</li>
+<li>Do not use the Client's belongings, food or facilities beyond what the pet's care requires.</li>
+<li>Do not share the Client's address, access codes or pet details with anyone outside the Platform.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.4 Pet Walking</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Collect the pet with a proper leash, carrier or crate as instructed, and follow feeding and medication instructions exactly.</li>
+<li>Follow the Client's handling instructions, such as muzzle requirements, feeding restrictions and anxiety triggers.</li>
+<li>Do not leave the pet unsupervised outdoors.</li>
+<li>Do not let the pet off-leash unless the Client permits it for a designated off-leash area.</li>
+<li>Avoid heavy traffic, construction zones and areas with aggressive stray animals.</li>
+<li>Do not walk more than 2 pets at once unless agreed in the task.</li>
+<li>Do not feed the pet any food or treats the Client has not provided or approved.</li>
+<li>Carry fresh water on walks longer than 30 minutes, and carry waste bags and clean up after the pet.</li>
+<li>Return the pet to the exact person or location the Client specified.</li>
+<li>Report any injury, escape attempt or aggressive encounter to the Client immediately.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.5 Vet Visit Assistance</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Collect the pet with a proper leash, carrier or crate as instructed, and follow the Client's handling, feeding and medication instructions.</li>
+<li>Make sure the vehicle is safe and ventilated for the animal. Do not carry more than one Client's pet in a trip.</li>
+<li>Never leave the animal unattended, whether in transit, at the clinic or while waiting.</li>
+<li>Do not give any medication, injection or treatment. Only the vet may do so.</li>
+<li>Do not authorise any treatment or surgery without the Client's approval through the app.</li>
+<li>Relay the vet's diagnosis, prescription and instructions to the Client accurately through the app. Do not give personal medical opinions.</li>
+<li>Share photos of the pet at the clinic and a copy of the prescription or receipt.</li>
+<li>Collect and hand over all vet documents, prescriptions and medication to the Client.</li>
+<li>Return the pet to the exact person or location specified. Do not hand the pet to neighbours or security guards without the Client's approval.</li>
+<li>Report any injury, escape or distress to the Client and Nock support immediately.</li>
+<li>Do not share the Client's address, the pet's medical history or vet details outside the Platform.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.6 General Paperwork</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Carry a valid government-issued ID and the Client's signed authorisation or power of attorney, as applicable.</li>
+<li>Share your live location while at the venue.</li>
+<li>Do not open sealed documents unless instructed.</li>
+<li>Do not fill in, sign or change any document, or agree to anything for the Client, without their explicit written instruction.</li>
+<li>Do not give legal, financial or procedural advice. Only carry out the task as instructed.</li>
+<li>Give real-time updates at each stage: arrived at office, token received, submitted, waiting for acknowledgment.</li>
+<li>Report any rejection, objection or extra document requirement from the office immediately through the app.</li>
+<li>Photograph the submitted form or application as proof and upload it to the app immediately.</li>
+<li>Collect and return all acknowledgment slips, receipts, token numbers and reference IDs to the Client.</li>
+<li>Share payment confirmations or receipts immediately through the app.</li>
+<li>Do not use Client funds for any personal transaction, however brief. Return all unused cash or payment instruments immediately.</li>
+<li>Do not pay bribes or "speed money" at any office.</li>
+<li>Never store, screenshot or note down the Client's bank account, card or UPI details.</li>
+<li>Apart from the proof in item 8, do not photograph or keep copies of Client documents. Delete any digital copies shared through the app within 24 hours of task completion.</li>
+<li>Do not share Client information with office staff, agents or anyone else beyond what the submission strictly needs.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.7 Household Help</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Share your live location while at the venue, and carry a valid ID with Nock attire or badge.</li>
+<li>Ring the doorbell or notify through the app on arrival. Do not enter without the Client's explicit permission.</li>
+<li>Report any pre-existing damage or safety hazard, such as a gas leak, electrical fault or water leak, before starting.</li>
+<li>Work only in the areas the Client specifies. Do not enter bedrooms, personal storage or restricted rooms unless directed.</li>
+<li>Follow the Client's instructions on cleaning products, such as eco-friendly, allergen-free or no bleach.</li>
+<li>Bring your own basic cleaning supplies unless the Client specifies household products.</li>
+<li>Handle the Client's belongings with care. Report any breakage or damage immediately with photo evidence.</li>
+<li>Do not rearrange, discard or move items unless asked.</li>
+<li>Do not use the Client's phone, electronics, food or toiletries without permission.</li>
+<li>Do not bring anyone into the home without the Client's prior approval.</li>
+<li>Do not take photos or videos inside the home.</li>
+<li>Do not accept food, drinks or gifts that could create an obligation or discomfort.</li>
+<li>Do not copy, keep or share keys, gate codes, WiFi passwords or security system details.</li>
+<li>Do not discuss the home's layout, possessions, family members or living conditions with anyone outside the Platform.</li>
+<li>Leave promptly when the task is complete. Do not linger, use facilities or rest without permission.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.8 Tuitions</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Follow the curriculum, syllabus and learning goals agreed with the Client. Do not change them without discussion.</li>
+<li>Keep professional boundaries at all times. The relationship is strictly educational.</li>
+<li>Never be alone in a closed room with a minor. The door must stay open, or a guardian must be on the premises.</li>
+<li>Never physically discipline, threaten or emotionally pressure a student.</li>
+<li>Do not share inappropriate, offensive or non-educational material. Do not use personal devices to show content to minors unless the parent or guardian pre-approves it.</li>
+<li>Do not contact the student privately by phone, social media or messaging apps. Communicate through the parent and Repatria app.</li>
+<li>After each session, send a brief summary to the parent or Client through the app: topics covered, homework set and areas of concern.</li>
+<li>Do not share the student's academic performance, learning difficulties or personal details outside the Platform.</li>
+<li>Do not solicit the Client for off-platform tuition. Book every session through Nock.</li>
+<li>Do not accept extra payment, gifts or favours from the Client or student outside the Platform.</li>
+<li>Cancel or reschedule through the app at least 4 hours in advance. No-shows lead to rating penalties.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.9 Doctor Home Visit</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Carry a valid government-issued ID, your medical registration certificate and Nock badge. Share live location at the venue.</li>
+<li>Arrive within the agreed time window. Tell the Client in advance about any delay of more than 15 minutes.</li>
+<li>Carry a basic medical kit: stethoscope, BP monitor, thermometer, pulse oximeter, gloves and sanitiser.</li>
+<li>Follow standard hygiene: sanitise hands before and after examination, use disposable gloves and dispose of medical waste properly.</li>
+<li>Do not leave the patient unattended during the visit.</li>
+<li>Conduct a proper examination. Do not diagnose by phone or video alone when a home visit is booked.</li>
+<li>Explain the diagnosis, medicines and follow-up steps to the patient and caregiver in clear, non-technical language.</li>
+<li>Upload a legible prescription to the app immediately after the consultation.</li>
+<li>Do not prescribe controlled substances (Schedule H1, Schedule X) without proper documentation and justification.</li>
+<li>Do not perform invasive procedures at home unless certified and equipped to do so.</li>
+<li>Refer the patient to a hospital or specialist when the condition needs tests, surgery or emergency care.</li>
+<li>Maintain patient confidentiality as required by medical regulations in India. Do not share health or personal details outside the Platform.</li>
+<li>Do not recommend pharmacies, diagnostic centres or hospitals for personal commission.</li>
+<li>Do not accept direct payment from the patient. All fees go through the Platform.</li>
+<li>Report any sign of abuse, neglect or unsafe living conditions to Nock's safety team immediately.</li>
+<li>Do not revisit the patient outside a booked task. Follow-ups need a new booking.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.10 Hospital Visitation Assistance</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Arrive at least 15 minutes before the visit window. Check in at reception or the nursing station and follow the hospital's visitor policies.</li>
+<li>Wear a mask, sanitise your hands and follow any PPE rules of the hospital or ward.</li>
+<li>Do not enter the ICU, NICU, operation theatres or isolation wards unless the hospital and Client explicitly authorise it.</li>
+<li>Sit with the patient, provide companionship and help with basic non-medical needs. Do not leave the patient unattended or leave the hospital premises during the task.</li>
+<li>Never give, adjust or interfere with any medicine, IV drip, oxygen supply or medical equipment.</li>
+<li>Call a nurse or hospital staff immediately if the patient shows signs of distress.</li>
+<li>Do not make medical decisions for the patient, including consent forms, treatment approvals or discharge requests, unless you carry a notarised power of attorney.</li>
+<li>Do not bring outside food or drink for the patient unless the treating doctor permits it.</li>
+<li>Relay updates to the Client at the agreed intervals through the app.</li>
+<li>Do not argue with hospital staff. Report any issue to the Client and Nock support.</li>
+<li>Do not accept money, valuables or belongings from the patient for safekeeping.</li>
+<li>Do not photograph or record the patient, medical charts, prescriptions or hospital records without the Client's explicit permission.</li>
+<li>Do not share the patient's diagnosis, room, ward, condition, treatment, finances, family matters or personal affairs with anyone outside the Platform, including hospital staff and other visitors.</li>
+<li>Before leaving, return any visitor passes, patient belongings or documents to the right person, and log completion in the app with a brief summary.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.11 Overnight Bedside Support</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Arrive at least 30 minutes before the shift starts to receive the handover. Know the nearest hospital's name, address and emergency number before the shift begins.</li>
+<li>Work the full shift defined in the app (standard: 6 PM to 8 AM). Leaving early without the Client's approval is a serious violation and may lead to legal action.</li>
+<li>Do not consume alcohol, sedatives or anything that impairs alertness within 12 hours before or during the shift.</li>
+<li>Stay awake and alert for the whole shift. Sleeping on duty leads to immediate deactivation.</li>
+<li>Do not leave the patient's bedside for more than 10 minutes at a time, and never leave the patient alone.</li>
+<li>Help with non-medical needs: water, washroom, repositioning in bed, responding to discomfort and calling for help.</li>
+<li>Check and record the patient's condition in the app at least every 2 hours, and send updates to the Client at the agreed intervals.</li>
+<li>Never give, adjust or interfere with any medicine, IV drip, oxygen supply or medical equipment, and do not make medical decisions for the patient.</li>
+<li>If the patient shows signs of distress, call a nurse, hospital staff or emergency services immediately.</li>
+<li>Where the shift is in a hospital, wear a mask, sanitise your hands and follow the hospital's PPE and visitor policies.</li>
+<li>Use only the designated area of the home. Do not sleep in the patient's bed or use their bedding. Do not invite anyone during the shift.</li>
+<li>Do not photograph or record the patient at any time.</li>
+<li>Keep the patient's medical condition, home, family and nightly routines strictly confidential.</li>
+<li>Report any sign of elder abuse, neglect, self-harm or unsafe living conditions to Nock's safety team immediately and confidentially.</li>
+<li>At the end of the shift, hand over to the Client, a family member or the next caregiver with a verbal and in-app summary.</li>
+<li>Cancel at least 6 hours in advance. Late cancellations lead to severe rating penalties and possible temporary deactivation.</li>
+<li>Do not arrange recurring overnight shifts with the Client outside the Platform.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">7.12 Custom Tasks</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Read the full task description, special instructions and Client notes before accepting. Accepting means you agree to all stated conditions.</li>
+<li>Confirm your understanding of the scope with the Client through the app chat before starting.</li>
+<li>Do not perform illegal or unethical tasks, or tasks involving firearms, explosives, controlled substances or smuggled goods.</li>
+<li>Do not perform tasks involving hazardous materials, electrical or plumbing work that needs a licensed professional, tree cutting above 3 metres, or rooftop or height work without safety equipment.</li>
+<li>Do not accept tasks of a personal nature beyond professional scope. Companionship tasks must not involve romantic, intimate or inappropriate requests.</li>
+<li>Document the task with timestamped photos at the start, during (if applicable) and at completion, uploaded to the app as proof of work.</li>
+<li>Do not go beyond the agreed scope. Log any extra request from the Client as a separate task.</li>
+<li>Tell the Client and Nock support immediately if the task needs more time, cost or expertise than described.</li>
+<li>Do not use the Client's tools, equipment or supplies unless offered and agreed in the app. Return any borrowed tools, keys, access cards or materials at the end.</li>
+<li>Do not dispose of, donate or remove any Client belongings unless the task is a disposal task and the Client has listed the items.</li>
+<li>If the task involves entering a Client's home, all Household Help rules (7.7) apply. If it involves a minor, all Tuitions safeguarding rules (7.8) apply. If it involves a patient or elderly person, all Hospital Visitation (7.10) and Overnight Bedside Support (7.11) rules apply.</li>
+<li>Rate and review the task honestly.</li>
+</ol>
+<h2 id="s8" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">8. Payments, fees, expenses and payouts</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">All payments for tasks must go through Repatria Platform. Cash, UPI or bank transfers made directly between a Client and a Runner are not allowed.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">8.1 Pricing</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Task prices are set by Nock's pricing engine. Clients and Runners must not negotiate prices outside the Platform.</li>
+<li>Priority tasks carry a surcharge, shown before the Client confirms.</li>
+<li>Runners receive 85% of the task value. Nock's platform commission of 15% is non-negotiable.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">8.2 Client payments</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Pay the full task amount before or on completion, as set out in the app's payment flow.</li>
+<li>Do not withhold payment to pressure a Runner into work beyond the task scope.</li>
+<li>Do not offer payment in kind, such as goods, services or favours, instead of payment through the Platform.</li>
+<li>Do not use stolen, fraudulent or unauthorised payment methods. This leads to a permanent ban and legal action.</li>
+<li>Refunds for completed tasks are given only for a valid reason, documented with evidence in the app.</li>
+<li>Subscription and package credits cannot be transferred and expire according to the plan terms.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">8.3 Expenses and reimbursements</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Clients must pre-approve any reimbursable expense, such as parking, entry fees, vet bills or office fees, through the app before the Runner incurs it.</li>
+<li>Runners must support every expense claim with a receipt, and must not inflate claims or submit fraudulent receipts.</li>
+<li>Runners must not use Client funds for any personal transaction, however brief, and must return all unused cash or payment instruments when the task ends.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">8.4 Runner payouts</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Payouts are made to the Runner's verified bank account on the Platform's payout schedule.</li>
+<li>Runners must not ask Clients for advance payments, deposits or tips outside the app.</li>
+<li>Accepting cash, goods or favours instead of payment through the Platform is grounds for deactivation.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">8.5 Payment disputes</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Clients and Runners must raise any payment dispute through the in-app resolution center within 48 hours of task completion.</p>
+<h2 id="s9" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">9. Cancellations and refunds</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">All cancellations and rescheduling must be done through the app. When a Client cancels, the refund is a percentage of the task amount paid. It depends on the task category and when the task is cancelled.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">9.1 Refunds when a Client cancels</h3>
+<div class="overflow-x-auto mb-6 bg-card-auralis border border-auralis rounded-2xl"><table class="w-full text-sm md:text-base min-w-[760px]"><thead><tr><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Task category</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">More than 90 minutes before start</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Within 10 minutes of booking (task more than 3 hours away)</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Less than 90 minutes before start, or after a Runner is assigned</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">No Runner found</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">After the task starts</th></tr></thead><tbody>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Pickup & Drop</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">75%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Priority Pickup & Drop</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">50%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Pet Sitting</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Pet Walking</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Vet Visit Assistance</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">75%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">General Paperwork</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">75%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">50%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Household Help</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">80%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">50%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Tuitions</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">80%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Doctor Home Visit</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">75%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">25%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Hospital Visitation Assistance</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">65%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Overnight Bedside Support</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">65%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Custom</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">50%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">90%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">30%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">100%</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">0%</td></tr>
+</tbody></table></div>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>The "within 10 minutes of booking" refund applies only if the task is scheduled to start more than 3 hours after the cancellation.</li>
+<li>If more than one column applies to a cancellation, the higher refund applies.</li>
+<li>If Nock cannot find a Runner for your task, you receive a full refund.</li>
+<li>No refund is given once the task has started.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">9.2 How refunds are paid</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Refunds are paid to the original payment method.</li>
+<li>NRI customers can choose to receive a refund in their Nock wallet instead. Wallet balance can be used only to pay for tasks within Repatria app. It cannot be withdrawn, transferred or exchanged for cash.</li>
+<li>For NRI customers, a refund to the original payment method carries an additional charge of 3% of the refund amount as gateway fees.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">9.3 When a Runner cancels</h3>
+<div class="overflow-x-auto mb-6 bg-card-auralis border border-auralis rounded-2xl"><table class="w-full text-sm md:text-base min-w-[560px]"><thead><tr><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Category</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Minimum notice</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Consequence of late cancellation or no-show</th></tr></thead><tbody>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Tuitions</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">4 hours</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Rating penalty for no-shows</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Overnight Bedside Support</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">6 hours</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Severe rating penalty and possible temporary deactivation</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Any category, for safety reasons</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">None</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">No penalty</td></tr>
+</tbody></table></div>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">A Runner may decline a custom task outside their skills, capability or comfort level without a rating penalty. Nock may reject, pause or cancel any custom task its safety team flags as high-risk, unclear or potentially harmful to either party.</p>
+<h2 id="s10" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">10. Privacy and confidentiality</h2>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">How Nock collects and uses personal data is set out in the <a class="text-primary underline underline-offset-4" href="privacy.html">Nock Privacy Policy</a>. By using the Platform, you consent to Nock processing task data for matching, safety and quality improvement as described there. This section covers how Clients and Runners must treat each other's information.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">10.1 Client obligations</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Do not share a Runner's personal details, such as name, photo, phone number or vehicle details, on social media or with third parties.</li>
+<li>Do not photograph or record a Runner without their consent, and do not post identifiable photos or videos of a Runner in reviews or on social media without consent.</li>
+<li>Do not use a Runner's personal information for any purpose outside the task, including marketing, solicitation or background research.</li>
+<li>Delete any Runner contact information you may have seen during the task.</li>
+<li>Do not stalk, follow or try to locate a Runner outside an active task.</li>
+<li>Do not share task details, such as addresses visited, items carried or patients visited, with unauthorised persons.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">10.2 Runner obligations</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Do not share any Client's personal information, home address or access details with third parties.</li>
+<li>Do not save, store or share a Client's phone number, address or other personal data outside the app.</li>
+<li>Do not use information from a task for marketing, solicitation or personal gain.</li>
+<li>Delete any temporary access credentials, such as gate codes, WiFi passwords or spare keys, immediately after the task.</li>
+<li>Do not discuss Client details, the nature of a task, the Client's home or anything you observed during a task with other Runners or anyone outside the Platform.</li>
+<li>Category-specific confidentiality rules in Section 7 also apply, especially for paperwork, household, tuition and medical tasks.</li>
+</ol>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">A Runner who breaches Client privacy faces immediate deactivation and possible legal action. A Client who breaches Runner privacy may have their account suspended or terminated.</p>
+<h2 id="s11" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">11. Prohibited tasks, safety, damage and disputes</h2>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">11.1 Prohibited tasks</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">No one may post or accept a task that involves:</p>
+<ul class="list-disc pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>anything illegal, unethical, dangerous or against Nock's community guidelines</li>
+<li>alcohol, narcotics, controlled substances, weapons, firearms, explosives, hazardous materials, unlabelled chemicals or smuggled goods</li>
+<li>intimate, romantic or inappropriate personal requests</li>
+<li>work that legally requires a licensed professional, unless the Runner holds that licence</li>
+<li>tree cutting above 3 metres, or rooftop or height work without safety equipment</li>
+<li>bribes, false certificates, backdated prescriptions or any fraudulent document</li>
+</ul>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">11.2 Safety</h3>
+<ol class="list-decimal pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>Either party may end a task if they feel unsafe. A Runner who leaves for safety reasons is not penalised.</li>
+<li>Report misconduct, threats or unsafe conditions through the app's reporting feature, not through personal confrontation.</li>
+<li>Runners must report any sign of abuse, neglect, self-harm or unsafe living conditions seen during a task to Nock's safety team immediately and confidentially.</li>
+<li>Nock may pause or cancel any task its safety team considers high-risk.</li>
+</ol>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">11.3 Damage and loss</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Before a task starts, the Client and Runner should record and agree on the condition of any items or spaces involved. Report damage or loss through the app with photo evidence within these windows:</p>
+<div class="overflow-x-auto mb-6 bg-card-auralis border border-auralis rounded-2xl"><table class="w-full text-sm md:text-base min-w-[560px]"><thead><tr><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Category</th><th class="text-left font-medium text-primary px-4 py-3 border-b border-auralis align-bottom">Client reporting window</th></tr></thead><tbody>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Priority Pickup &amp; Drop</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">1 hour after delivery</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Pickup &amp; Drop</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">2 hours after delivery</td></tr>
+<tr><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">Household Help</td><td class="align-top px-4 py-3 border-b border-auralis text-secondary-auralis">4 hours after completion</td></tr>
+</tbody></table></div>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Runners must report any damage, breakage, spillage or loss they cause or discover immediately. A Runner is not responsible for pre-existing damage, damage caused by poor packaging, or delays and rejections caused by third parties such as government offices or hospitals.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">11.4 Disputes</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Raise disputes through the in-app resolution center. Payment disputes must be raised within 48 hours of task completion. Nock will review the evidence in the app, including chat, photos, location data and receipts, and its decision on refunds and payouts is final within the Platform, without affecting any rights you have under law.</p>
+<h2 id="s12" class="font-h3 text-[24px] md:text-[28px] text-primary mt-16 mb-6 scroll-mt-28">12. Ratings, suspension, termination and general terms</h2>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">12.1 Ratings</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Clients and Runners rate each other after every task. Ratings must be fair and honest. Runners must keep a rating of 4.0 or above to stay active.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">12.2 Suspension and termination</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Nock may warn, suspend, deactivate or permanently ban an account, and may take legal action where appropriate, for breach of these Terms. This includes:</p>
+<ul class="list-disc pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li>abuse, threats, harassment or discrimination</li>
+<li>payments outside the Platform, payment in kind or fraudulent payment methods</li>
+<li>breaches of privacy or confidentiality</li>
+<li>fake, duplicate or impersonating accounts</li>
+<li>prohibited tasks</li>
+<li>for Runners: falling below the rating threshold, repeated priority misses, no-shows, sleeping on duty or leaving an overnight shift early</li>
+</ul>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">You may close your account at any time through the app. Obligations about payment, confidentiality and disputes continue after closure.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">12.3 Limitation of liability</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Runners are independent users, not employees or agents of Nock. Nock is not liable for the acts or omissions of Clients or Runners, for decisions a Client makes on advice from a doctor or vet, or for delays caused by third parties. To the extent permitted by law, Nock's total liability for any claim relating to a task is limited to the amount paid for that task.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">12.4 Indemnity</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">You agree to compensate Nock for losses arising from your breach of these Terms, your misuse of the Platform or your violation of any law or third-party right.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">12.5 Changes to these Terms</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">Nock may update these Terms. We will post the new version with its effective date and notify you in the app before material changes take effect. Continuing to use the Platform after that means you accept the updated Terms.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">12.6 Governing law</h3>
+<p class="font-body-lg text-body-lg text-secondary-auralis mb-6">These Terms are governed by the laws of India. The courts in Kerala have exclusive jurisdiction.</p>
+<h3 class="font-h3 text-[20px] text-primary mt-10 mb-4">12.7 Contact and grievances</h3>
+<ul class="list-disc pl-6 space-y-3 font-body-lg text-body-lg text-secondary-auralis mb-6">
+<li><span class="text-primary font-medium">Support:</span> <a class="text-primary underline underline-offset-4" href="mailto:contact@repatria.in">contact@repatria.in</a></li>
+<li><span class="text-primary font-medium">Grievance Officer:</span> Officer in Charge, Grievance, <a class="text-primary underline underline-offset-4" href="mailto:contact@repatria.in">contact@repatria.in</a></li>
+<li><span class="text-primary font-medium">Address:</span> Repatria Private Limited, 12/136/A1, Aralam, Thalassery, Kannur - 670704, Kerala, India</li>
+</ul>
+</article>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full border-t border-zinc-200 dark:border-zinc-800 mt-auto py-12 bg-transparent">
+<div class="max-w-[1280px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-8">
+<span class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-h3 text-[20px]">Repatria Pvt Ltd</span>
+<span class="text-sm text-secondary-auralis font-body-md">© 2025 Repatria Pvt Ltd. Real help, hyperlocal.</span>
+</div>
+<div class="flex flex-wrap items-center gap-6">
+<a class="text-sm text-secondary-auralis hover:text-primary transition-colors font-body-md" href="contact.html">Contact</a>
+<a class="text-sm text-secondary-auralis hover:text-primary transition-colors font-body-md" href="terms.html">Terms and Conditions</a>
+<a class="text-sm text-secondary-auralis hover:text-primary transition-colors font-body-md" href="privacy.html">Privacy Policy</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>How It Works - Repatria</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c4c7c7",
+                      "on-tertiary-fixed": "#1d1b1a",
+                      "tertiary-container": "#1d1b1a",
+                      "surface-tint": "#5f5e5e",
+                      "on-secondary-container": "#626262",
+                      "surface-container-low": "#f7f3f2",
+                      "on-surface": "#1c1b1b",
+                      "on-secondary-fixed-variant": "#464747",
+                      "primary": "#000000",
+                      "surface-container-highest": "#e5e2e1",
+                      "inverse-on-surface": "#f4f0ef",
+                      "on-tertiary-container": "#868381",
+                      "on-error-container": "#93000a",
+                      "outline": "#747878",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#c8c6c5",
+                      "surface-container-high": "#ebe7e6",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#fdf8f8",
+                      "on-tertiary-fixed-variant": "#484645",
+                      "background": "#fdf8f8",
+                      "surface-variant": "#e5e2e1",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "inverse-surface": "#313030",
+                      "secondary-container": "#e1dfdf",
+                      "primary-container": "#1c1b1b",
+                      "surface": "#fdf8f8",
+                      "on-surface-variant": "#444748",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "secondary": "#5e5e5e",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#c7c6c6",
+                      "on-primary-fixed-variant": "#474646",
+                      "surface-dim": "#ddd9d8",
+                      "tertiary": "#000000",
+                      "tertiary-fixed-dim": "#cac6c3",
+                      "surface-container": "#f1edec",
+                      "on-primary-fixed": "#1c1b1b",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-background": "#1c1b1b",
+                      "tertiary-fixed": "#e6e1df",
+                      "secondary-fixed": "#e4e2e2",
+                      "primary-fixed": "#e5e2e1",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#858383"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px",
+                      "2xl": "1.5rem",
+                      "3xl": "1.75rem"
+              },
+              "spacing": {
+                      "unit_base": "8px",
+                      "max_width": "1280px",
+                      "gutter": "32px",
+                      "columns": "12",
+                      "section_gap_max": "180px",
+                      "container_padding": "32px",
+                      "section_gap_min": "140px"
+              },
+              "fontFamily": {
+                      "h1": ["Geist"],
+                      "h2": ["Geist"],
+                      "label-caps": ["Geist"],
+                      "body-md": ["Geist"],
+                      "body-lg": ["Geist"],
+                      "h3": ["Geist"]
+              },
+              "fontSize": {
+                      "h1": ["84px", {"lineHeight": "1.05", "letterSpacing": "-0.04em", "fontWeight": "600"}],
+                      "h2": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                      "h3": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { background-color: #F7F7F5; color: #111111; }
+        .text-secondary-auralis { color: #6B6B6B; }
+        .bg-panel-auralis { background-color: #F3F2EF; }
+        .bg-card-auralis { background-color: #FCFCFB; }
+        .border-auralis { border-color: #E7E7E4; }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: flex;
+            animation: marquee 40s linear infinite;
+            min-width: 100%;
+        }
+        .group-hover\:pause-marquee:hover {
+            animation-play-state: paused;
+        }</style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden">
+<!-- TOP NAVIGATION -->
+<nav class="fixed top-0 w-full z-50 border-b border-zinc-200/60 dark:border-zinc-800/60 bg-[#F7F7F5]/80 backdrop-blur-md dark:bg-zinc-950/80 transition-all">
+<div class="max-w-[1280px] mx-auto px-8 flex justify-between items-center h-[72px]">
+<div class="flex items-center gap-12">
+<a class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 text-[20px] font-h1" href="index.html">
+                    Repatria
+                </a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-200 font-body-md" href="how-it-works.html">How It Works</a>
+<a class="text-sm font-medium tracking-tight text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-200 font-body-md" href="about.html">About Us</a>
+</div>
+</div>
+<div class="flex items-center">
+<a class="bg-primary text-on-primary px-4 py-2 rounded-full font-medium transition-all scale-98 active:opacity-80 text-[14px] font-body-md" href="#">
+                    Post a Task
+                </a>
+</div>
+</div>
+</nav>
+<!-- MAIN CONTENT CANVAS -->
+<main class="flex-grow pt-[140px] pb-12">
+<!-- HERO SECTION -->
+<section class="max-w-[1280px] mx-auto px-8 mb-[140px]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-7 flex flex-col gap-8">
+<h1 class="font-h1 text-h1 text-primary">Describe it. Confirm it. Get it done.</h1>
+<div class="flex flex-wrap items-center gap-4 mt-4">
+<a class="bg-primary text-on-primary px-6 py-3 rounded-full font-medium transition-all hover:bg-opacity-90" href="#">Post a Task</a>
+</div>
+</div>
+<div class="lg:col-span-4 lg:col-start-9 flex justify-end">
+<p class="font-body-lg text-body-lg text-secondary-auralis max-w-sm text-right lg:text-left pt-4">
+                        No forms. No phone calls. Just tell our AI assistant what you need in plain language and a verified local helper takes care of it.
+                    </p>
+</div>
+</div>
+</section>
+<!-- STEPS MODULE -->
+<section class="max-w-[1280px] mx-auto px-8 mb-[180px]">
+<div class="flex items-center gap-4 mb-8">
+<span class="font-label-caps text-label-caps bg-surface-variant text-primary px-3 py-1 rounded-full">How It Works</span>
+<div class="h-px bg-auralis flex-grow opacity-50"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12">
+<div class="lg:col-span-5">
+<h2 class="font-h2 text-[48px] text-primary leading-tight">Four steps from request to done</h2>
+</div>
+<div class="lg:col-span-6 lg:col-start-7 flex items-end">
+<p class="font-body-lg text-body-lg text-secondary-auralis">From medicine pickups to queue standing to elder accompaniment — every task follows the same simple flow.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow">
+<div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start z-10">
+<span class="material-symbols-outlined text-secondary-auralis">chat_bubble</span>
+<span class="font-label-caps text-label-caps text-secondary-auralis">01</span>
+</div>
+<div class="z-10">
+<h4 class="font-h3 text-[20px] mb-2">Describe your task</h4>
+<p class="text-sm text-secondary-auralis">Tell the AI assistant what you need in plain language — in English or Malayalam. No forms, no phone calls.</p>
+</div>
+</div>
+<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow">
+<div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start z-10">
+<span class="material-symbols-outlined text-secondary-auralis">task_alt</span>
+<span class="font-label-caps text-label-caps text-secondary-auralis">02</span>
+</div>
+<div class="z-10">
+<h4 class="font-h3 text-[20px] mb-2">Confirm the details</h4>
+<p class="text-sm text-secondary-auralis">The AI extracts location, timing, and requirements automatically. Review them and post the task.</p>
+</div>
+</div>
+<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow">
+<div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start z-10">
+<span class="material-symbols-outlined text-secondary-auralis">support_agent</span>
+<span class="font-label-caps text-label-caps text-secondary-auralis">03</span>
+</div>
+<div class="z-10">
+<h4 class="font-h3 text-[20px] mb-2">Get a verified helper</h4>
+<p class="text-sm text-secondary-auralis">A real, vetted person nearby accepts your task — not a bot, not a courier.</p>
+</div>
+</div>
+<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow">
+<div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start z-10">
+<span class="material-symbols-outlined text-secondary-auralis">location_on</span>
+<span class="font-label-caps text-label-caps text-secondary-auralis">04</span>
+</div>
+<div class="z-10">
+<h4 class="font-h3 text-[20px] mb-2">Track until it's done</h4>
+<p class="text-sm text-secondary-auralis">Monitor your task from assignment to completion. Live location, helper details, and status updates all in one place.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TASK TYPES MODULE -->
+<section class="max-w-[1280px] mx-auto px-8 mb-[140px]">
+<div class="flex items-center gap-4 mb-8">
+<span class="font-label-caps text-label-caps bg-surface-variant text-primary px-3 py-1 rounded-full">Task Categories</span>
+<div class="h-px bg-auralis flex-grow opacity-50"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12">
+<div class="lg:col-span-5">
+<h2 class="font-h2 text-[48px] text-primary leading-tight">Every errand, handled by a real person</h2>
+</div>
+<div class="lg:col-span-6 lg:col-start-7 flex items-end">
+<p class="font-body-lg text-body-lg text-secondary-auralis">From everyday pickups to specialized assistance — if it's legal, safe, and needs a human presence, Repatria can get it done.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6"><!-- Small Cards -->
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">medication</span>
+<span class="font-medium text-sm">Medicine Pickup</span>
+</div>
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">elderly</span>
+<span class="font-medium text-sm">Elder Care</span>
+</div>
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">shopping_cart</span>
+<span class="font-medium text-sm">Grocery Run</span>
+</div>
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">queue</span>
+<span class="font-medium text-sm">Queue Standing</span>
+</div>
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">pets</span>
+<span class="font-medium text-sm">Pet Care</span>
+</div>
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">description</span>
+<span class="font-medium text-sm">Form &amp; Doc Help</span>
+</div>
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">home_repair_service</span>
+<span class="font-medium text-sm">Household Tasks</span>
+</div>
+<div class="bg-panel-auralis rounded-xl p-5 border border-auralis flex flex-col gap-3 items-start hover:bg-surface-variant/50 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary">directions_walk</span>
+<span class="font-medium text-sm">Custom Errands</span>
+</div></div>
+</section>
+<!-- SIGN OFF SECTION -->
+<section class="max-w-[1280px] mx-auto px-8 mb-[140px] text-center flex flex-col items-center">
+<h2 class="font-h2 text-[48px] text-primary mb-8 max-w-3xl leading-tight">The help you need is right around the corner</h2>
+<div class="flex flex-wrap justify-center items-center gap-4">
+<a class="bg-primary text-on-primary px-6 py-3 rounded-full font-medium transition-all hover:bg-opacity-90" href="#">Post Your First Task</a>
+<a class="bg-transparent border border-outline text-primary px-6 py-3 rounded-full font-medium transition-all hover:bg-surface-variant" href="index.html">Back to Home</a>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full border-t border-zinc-200 dark:border-zinc-800 mt-auto py-12 bg-transparent">
+<div class="max-w-[1280px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-8">
+<span class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-h3 text-[20px]">Repatria Pvt Ltd</span>
+<span class="text-sm text-secondary-auralis font-body-md">© 2025 Repatria Pvt Ltd. Real help, hyperlocal.</span>
+</div>
+<div class="flex flex-wrap items-center gap-6">
+<a class="text-sm text-secondary-auralis hover:text-primary transition-colors font-body-md" href="terms.html">Terms and Conditions</a>
+<a class="text-sm text-secondary-auralis hover:text-primary transition-colors font-body-md" href="privacy.html">Privacy Policy</a>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-8 mt-8 pt-8 border-t border-zinc-200 dark:border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-secondary-auralis font-body-md text-center md:text-left">
+<address class="not-italic">Repatria Private Limited, 12/136/A1, Aralam, Thalassery, Kannur - 670704, Kerala, India</address>
+<div class="flex flex-wrap justify-center items-center gap-6">
+<a class="hover:text-primary transition-colors" href="tel:+917676179292">+91 76761 79292</a>
+<a class="hover:text-primary transition-colors" href="mailto:contact@repatria.in">contact@repatria.in</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
